@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-background-color: #ff4500;
+  --form-background-color: #4a4025;
+  --button-background-color: purple;
+}
+
+.main-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-background-color);
+  gap: 1rem;
+}
+
+/* Add book button styling */
+#addBook {
+  padding: 1rem;
+  border: none;
+  background-color: var(--button-background-color);
+  color: white;
+  font-size: 1rem;
+  font-family: roboto;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+form {
+  height: 90%;
+  width: 40%;
+  background-color: var(--form-background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  display: none;
+}
+
+.heading {
+  height: 10%;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: roboto;
+  color: white;
+}
+
+.book-name-container {
+  height: 10%;
+  width: 95%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.author-name-container {
+  height: 10%;
+  width: 95%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.no-of-pages-container {
+  height: 10%;
+  width: 95%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.have-read-container {
+  height: 10%;
+  width: 95%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-family: roboto;
+  font-size: 1rem;
+}
+
+.submit-button-container {
+  height: 10%;
+  width: 95%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+label {
+  height: 50%;
+  width: 40%;
+  font-family: roboto;
+  color: white;
+  font-weight: 700;
+}
+
+input {
+  height: 60%;
+  width: 60%;
+  outline: none;
+  font-family: roboto;
+  border-radius: 5px;
+  padding-left: 1rem;
+}
+
+.have-read-container > label {
+  width: 70%;
+  height: 50%;
+}
+
+.have-read-container input {
+  width: 30%;
+  height: 50%;
+}
+
+.submit-button-container button {
+  width: 40%;
+  height: 80%;
+  background-color: var(--button-background-color);
+  color: white;
+  font-family: roboto;
+  font-size: 1rem;
+  border: none;
+  font-weight: 500;
+}
+
+#addBook:hover,
+button:hover, .book-card button {
+  background-color: white;
+  color: purple;
+  font-weight: 500;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px black;
+}
+
+.book-card-container {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--main-background-color);
+  display: flex;
+  justify-content: space-around;
+}
+
+.book-card {
+  height: 50%;
+  width: 20%;
+  font-family: roboto;
+  color: black;
+  font-weight: 500;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+select {
+  width: 30%;
+  height: 50%;
+}
+
+.book-card button {
+  padding: 1rem;
+  font-size: 1rem;
+  font-family: roboto;
+}
+
+
+@media (max-width:780px) {
+  form{
+    width: 95%;
+  }
+
+  .book-card{
+    width: 90%;
+  }
+
+  .book-card-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+  }
+}
